@@ -1,0 +1,18 @@
+{
+  "name": "lambda-createUsers",
+  "version": "1.0.0",
+  "main": "dist/createUser.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "zip": "npm run build && cd dist && zip -r ../createUser.zip ."
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.657.0",
+    "@aws-sdk/lib-dynamodb": "^3.657.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.8.1",
+    "typescript": "^5.4.0"
+  }
+}
